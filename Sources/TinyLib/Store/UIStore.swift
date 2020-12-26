@@ -5,7 +5,7 @@ public class UIStore: ObservableObject {
     @Published public var hoveringID: String?
     @Published public var menuWidth: CGFloat?
     @Published public var menuOpened = false
-    @Published public var activeSection: Any?//: Preference.Section = .general
+    @Published public var activeSection: Any?
     
     public init() {}
     
@@ -19,6 +19,10 @@ public class UIStore: ObservableObject {
         self.hoveringID = hoveringID
         self.menuWidth = menuWidth
         self.menuOpened = menuOpened ?? false
+        self.activeSection = activeSection
+    }
+    
+    init(activeSection: Any?) {
         self.activeSection = activeSection
     }
 }
