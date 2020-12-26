@@ -157,7 +157,7 @@ public struct HorizontalOrganizingView<Element: JSONCodabble & Equatable & Hasha
     }
 }
 
-extension HorizontalOrganizingView {
+public extension HorizontalOrganizingView {
     init(
         componentsStore: ComponentsStore<Element>,
         coordinateSpace: String = "\(String(describing: Element.self))Ordering",
