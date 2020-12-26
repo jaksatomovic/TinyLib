@@ -11,7 +11,7 @@ public struct MenuActionTextView: View {
         uiStore.hoveringID == id
     }
     
-    init(id: String, text: String, action: (() -> Void)?) {
+    public init(id: String, text: String, action: (() -> Void)?) {
         self.id = id
         self.text = text
         self.action = action
